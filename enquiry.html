@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8' />
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='css/bootstrap.css'>
+	<title>The Cake Shop</title>
+</head>
+<body>
+<div class='navbar-wrapper'>
+<div class='container'>
+<nav class='navbar navbar-default navbar-fixed-top'>
+	<div class='container'>
+	<div class='navbar-header'>
+		<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
+		<span class='sr-only'>Toggle navigation</span>
+		<span class='icon-bar'></span>
+		<span class='icon-bar'></span>
+		<span class='icon-bar'></span>
+		</button>
+		<a class='navbar-brand' href='index.html'>The Cake Shop</a>
+	</div>
+	<div id='navbar' class='navbar-collapse collapse'>
+		<ul class='nav navbar-nav'>
+		<li><a href='index.html'>Home</a></li>
+		<li><a href='about.html'>About</a></li>
+		<li><a href='contact.html'>Contact</a></li>
+		<li><a href='menu.html'>Our Menu</a></li>
+		<li><a href='feedback.html'>Feedback</a></li>
+		<li class='active'><a href='enquiry.html'>Enquiry</a></li>
+		<li><a href='admin.php'>Admin</a></li>
+		</ul>
+		<ul class='nav navbar-nav navbar-right'>
+		</ul>
+	</div><!--/.nav-collapse -->
+	</div>
+</nav>
+</div>
+</div>
+<div class='container'>
+
+	<div class="page-header">
+		<h1><br />Enquiry form</h1>
+	</div>
+	<form class="form-horizontal" action="save_form.php" method="post" name="test_form">
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-6">
+		<input type="name" class="form-control" name="name" placeholder="Name">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">Number</label>
+		<div class="col-sm-3">
+		<input type="text" class="form-control" name="numb" placeholder="Number">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-6">
+		<input type="email" class="form-control" name="email" placeholder="Email">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail3" class="col-sm-2 control-label">Age</label>
+		<div class="col-sm-3">
+		<input type="text" class="form-control" name="age" placeholder="Age">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Enqiry Details</label>
+		<div class="col-sm-6">
+		<textarea class="form-control" rows="3" name="enquiry" placeholder="Text..."></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Other Information</label>
+		<div class="col-sm-6">
+		<textarea class="form-control" rows="2" name="other" placeholder="Text..."></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+		<button type="submit" class="btn btn-default" action="messageBox('Thank You!');">Submit</button>
+		</div>
+	</div>
+	</form>
+
+	<footer>
+	<p class='pull-right'><a href='#'>Back to top</a></p>
+	<p>&copy; 2015 The Cake Shop LTD &middot; <a href='privacy.html'>Privacy</a> &middot; <a href='terms.html'>Terms</a></p>
+	</footer>
+
+</div><!-- /.container -->
+</body>
+</html>
